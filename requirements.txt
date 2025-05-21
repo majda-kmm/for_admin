@@ -23,7 +23,7 @@ matplotlib==2.2.5
 monotonic==1.6
 node-semver==0.6.1
 packaging==20.9
-pandas==0.24.2
+pandas==1.1.5
 patch-ng==1.17.4
 pathlib2==2.3.7.post1
 pluginbase==1.0.1
