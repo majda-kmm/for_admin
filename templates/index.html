@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project Student Allocation at EURECOM</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+</head>
+<body>
+  <div class="school-banner">
+    <div class="school-title">GRADUATE SCHOOL AND RESEARCH IN DIGITAL SCIENCE</div>
+    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="School Logo" class="school-logo" />
+  </div>
+
+  <h1>Project Student Allocation at EURECOM</h1>
+
+  <div class="upload-box">
+    <h2>Available Projects</h2>
+    <table id="projects-table" border="1">
+      <thead>
+        <tr><th>Title</th><th>ID</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <h2 style="margin-top: 40px;">Student Choices</h2>
+    <table id="students-table" border="1">
+      <thead>
+        <tr><th>Name</th><th>ID</th><th>Choice 1</th><th>Choice 2</th><th>Choice 3</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <form action="/run-matching" method="POST" style="margin-top: 30px;">
+      <button type="submit">Run Matching Process</button>
+    </form>
+  </div>
+
+  <script>
+    // Load projects.csv
+    fetch('/static/projects.csv')
+    .then(response => response.text())
+    .then(csvText => {
+    const results = Papa.parse(csvText.trim(), {
+      header: true,
+      skipEmptyLines: true,
+    });
+    const projects = results.data;
+
+    const table = document.querySelector('#projects-table tbody');
+    projects.forEach(project => {
+      const row = `<tr>
+        <td>${project.Projects}</td>
+        <td>${project.ID}</td>
+      </tr>`;
+      table.insertAdjacentHTML('beforeend', row);
+    });
+  })
+  .catch(err => {
+    console.error('Fetch failed:', err);
+    alert('Erreur lors du chargement des projets.');
+  });
+    // Load student choices from backend
+    fetch('/api/student-choices')
+      .then(res => {
+        if (!res.ok) throw new Error('Student choices HTTP error: ' + res.status);
+        return res.json();
+      })
+      .then(data => {
+        console.log('Received student data:', data);
+        const table = document.querySelector('#students-table tbody');
+        data.forEach(student => {
+          const row = `<tr>
+            <td>${student.name}</td>
+            <td>${student.id}</td>
+            <td>${student.choice1}</td>
+            <td>${student.choice2}</td>
+            <td>${student.choice3}</td>
+          </tr>`;
+          table.insertAdjacentHTML('beforeend', row);
+        });
+      })
+      .catch(err => {
+        console.error('Fetch failed:', err);
+        alert('Erreur lors du chargement des choix étudiants.');
+      });
+  </script>
+</body>
+</html>

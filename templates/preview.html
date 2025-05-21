@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Preview - Project Student Allocation at EURECOM</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="school-banner">
+        <div class="school-title">GRADUATE SCHOOL AND RESEARCH IN DIGITAL SCIENCE</div>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="School Logo" class="school-logo">
+    </div>
+    
+    <h1>CSV File Preview</h1>
+    <div class="upload-box">
+        {{ table | safe }}
+        <br>
+        <a href="{{ url_for('download_file', filename=filename) }}" class="download-btn">Download Processed File</a>
+        <br>
+        <a href="/" class="back-btn">Back to Upload</a>
+    </div>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html>

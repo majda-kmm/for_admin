@@ -1,0 +1,170 @@
+.school-banner {
+    background: white;
+    text-align: center;
+    padding: 20px 30px;
+    border-bottom: 2px solid #229CD3;
+}
+
+.school-title {
+    font-size: 18px;
+    color: #333;
+    letter-spacing: 1.8px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.school-subtitle {
+    font-size: 14px;
+    color: #229CD3;
+    margin-bottom: 10px;
+}
+
+.school-logo {
+    height: 55px;
+    margin-top: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f0f4f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    padding: 15px 0;
+    text-align: center;
+}
+
+header img {
+    height: 70px;
+}
+
+h1 {
+    color: #003366;
+    font-weight: 600;
+    margin: 40px auto 20px;
+}
+
+.upload-box {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    width: 95%;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #229CD3;
+    border-radius: 8px;
+    width: 90%;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+    border-color: #003366;
+}
+
+button {
+    background: #003366;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #229CD3;
+    transform: translateY(-2px);
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    background: #229CD3;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+a:hover {
+    background: #003366;
+    transform: translateY(-2px);
+}
+
+footer {
+    margin-top: auto;
+    background: white;
+    padding: 14px 0;
+    text-align: center;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.04);
+    font-size: 14px;
+    color: #555;
+}
+
+.upload-box {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    width: 95%;
+    max-width: 1000px;  /* Allow space for the table */
+    margin: 20px auto;
+    text-align: center;
+    overflow-x: auto;  /* Allow horizontal scroll if needed */
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 100%;
+    background: white;
+    min-width: 600px;  /* Prevent too squished tables */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px 18px;
+    text-align: center;
+}
+
+table th {
+    background: #229CD3;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 700px) {
+    table {
+        min-width: unset;
+    }
+
+    .upload-box {
+        padding: 20px;
+    }
+}

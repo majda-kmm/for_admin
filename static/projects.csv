@@ -1,0 +1,61 @@
+Projects,ID,Quotas
+Optimizing SYCLDB,2025SPRING-02,1
+Did you see that? Using LLMs to Spot Violence in Event Camera Footage,2025SPRING-03,2
+Multimodal Dataset Generation for HDR Reconstruction with Event-Based Data,2025SPRING-04,2
+Utilizing Diffusion Models to Enhance Image Quality For Face Verification,2025SPRING-05,2-3
+Advanced Communications for Content Delivery Networks,2025SPRING-06,1-3
+Applying Advanced Distributed Computing for AI,2025SPRING-07,1-3
+Advanced Communications and Computing: from theory to practice,2025SPRING-08,1-3
+Transformer Representations in the Probability Simplex: A Study on Posterior Probability Dynamics,2025SPRING-09,1
+5G Autonomous AI-empowered Robotic Vehicle,2025SPRING-10,2
+5G Named AI Networking,2025SPRING-11,2
+FMCW radar for obstacle detection,2025SPRING-12,1
+Manifold Interpolating Optimal-Transport Flows for Trajectory Inference,2025SPRING-13,2
+TrajectoryNet: Modeling Cellular Dynamics with optimal transport,2025SPRING-14,2
+AI-Assisted Message Routing in Pub/Sub Systems,2025SPRING-15,2-3
+Exploring Lightweight M2M (LwM2M) and Cross-Layer IoT Protocol Interactions,2025SPRING-16,1
+LLM-Driven Lifecycle Management for Edge AI Devices,2025SPRING-17,2-3
+LLM-Assisted Scaling of Tiny Machine Learning Lifecycle Automation,2025SPRING-18,2-3
+Scaling TinyML Lifecycle Automation to Other ML Models for Arduino,2025SPRING-19,2-3
+Development of a Matching Algorithm for Student-Project Allocation,2025SPRING-20,2
+Implementation of a Matching Algorithm for Student-Project Allocation,2025SPRING-21,2
+Domain Generation Algorithms,2025SPRING-22,2
+Fairness and Differential Privacy in AI schemes,2025SPRING-23,2
+Pishing_GEN,2025SPRING-24,2
+Private Set Intersection,2025SPRING-25,2
+Simulation of microarchitectural attacks on RISC-V processors,2025SPRING-26,2
+"Design, Implementation and Validation of Novel Quantum Information processing Strategies",2025SPRING-27,3-4
+KV Cache Compression for Tabular Data in LLMs,2025SPRING-28,2
+Automatic LLM Benchmark Analysis for Text2SQL,2025SPRING-29,2
+Accelerating Large Language Models using Speculative Sampling,2025SPRING-31,3
+Grokking in-context: Learning to Learn Fast with In-Context Learning,2025SPRING-32,3
+The Effect of Data Compression on Object Detection Performance in Automotive Applications,2025SPRING-33,1
+Automating Malware Analysis Reporting with Large Language Models,2025SPRING-34,1
+Finding third-party libraries in Android apps,2025SPRING-35,1
+Compressive Sensing with Applications to Near-Field to Far-Field Antenna Pattern Extrapolation,2025SPRING-36,1
+Graph Embedding Techniques and Estimate Network Reliability Using Monte Carlo Simulation Approach,2025SPRING-37,2
+Estimating Sequential Source Coding Scheme with Dynamic Programming and Reinforcement Learning,2025SPRING-38,2
+Reinforcement Learning for Vehicle Platooning System,2025SPRING-39,3
+Generative AI Source Tracing: Identifying the Origins of Synthetic Media,2025SPRING-40,2
+Language-Guided Deepfake Detection with LLMs,2025SPRING-41,2
+Ideology and Power Identification in Parliamentary Debates,2025SPRING-42,2
+Building personalized learning paths for EULER,2025SPRING-43,2
+Finetuning Large Language Models with Reinforcement Learning,2025SPRING-44,2
+Interactive Ontology Development,2025SPRING-45,2
+EURECOM at SemEval-2025 Task 8: Question Answering over Tabular Data,2025SPRING-46,2
+Enhancing a Large Language Model-Based Playlist Continuation Recommender System,2025SPRING-47,2
+Personalized Performance Prediction from Wearable Data,2025SPRING-48,1
+Implementation of Cryptographic Protocols in Rust,2025SPRING-49,1
+Masking of hardware cryptographic functions,2025SPRING-51,1
+Hardware-accelerated computational genomics,2025SPRING-52,1
+Foundation Models in Healthcare,2025SPRING-55,2
+Defining topological priors to constraint learning-based image segmentation,2025SPRING-53,1
+Broadcasting advanced machine learning algorithms,2025SPRING-54,1
+Experimenting fault attacks on RISC-V processors,2025SPRING-56,1
+"Fine-tuning, distilling and aligning LLMs (Large Language Models)",2025SPRING-58,1
+Bayesian Techniques in Compressive Sensing,2025SPRING-59,1
+ISAC demonstration for network optimization in an emulated 5G network.,2025SPRING-60,2
+Linux userspace executable memory tracer,2025SPRING-61,1
+Image compression techniques for DNA data storage,2025SPRING-62,1
+serverless incremental KG cleaning,2025SPRING-63,1
+Developing an Energy Consumption Monitoring System on Raspberry Pi,2025SPRING-64,2
