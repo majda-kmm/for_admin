@@ -3,7 +3,7 @@ import os
 import pandas as pd
 import requests
 from flask_cors import CORS
-import matching_interface  
+import matching_walid
 app = Flask(__name__)
 CORS(app)
 
@@ -46,7 +46,7 @@ def run_matching():
         f.write(response.content)
 
     output_path = os.path.join(PROCESSED_FOLDER, 'assignments.xlsx')
-    df_result = matching_interface.run_matching(project_path, student_path, output_path)
+    df_result = matching_walid.run_matching(project_path, student_path, output_path)
 
     table_html = df_result.to_html(classes='csv-preview', index=False)
     return render_template('preview.html', table=table_html, filename='assignments.xlsx')
