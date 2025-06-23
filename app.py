@@ -3,8 +3,7 @@ import os
 import pandas as pd
 import requests
 from flask_cors import CORS
-import matching_walid  # ton module de matching
-
+import matching_interface  
 app = Flask(__name__)
 CORS(app)
 
@@ -34,7 +33,6 @@ def student_choices():
 def run_matching():
     project_path = os.path.join(STATIC_FOLDER, 'projects.csv')
 
-    # IMPORTANT : lien vers Google Sheet publié en CSV (doit être un lien direct CSV)
     SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1y8dabxt5kMxbFPePS288vZHwW5jQlPfB67TOODqZdbI/export?format=csv&gid=0"
     
     try:
@@ -48,7 +46,7 @@ def run_matching():
         f.write(response.content)
 
     output_path = os.path.join(PROCESSED_FOLDER, 'assignments.xlsx')
-    df_result = matching_walid.run_matching(project_path, student_path, output_path)
+    df_result = matching_interface.run_matching(project_path, student_path, output_path)
 
     table_html = df_result.to_html(classes='csv-preview', index=False)
     return render_template('preview.html', table=table_html, filename='assignments.xlsx')
